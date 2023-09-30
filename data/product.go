@@ -1,13 +1,13 @@
 package data
 
-type product struct {
+type Product struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`
 	Price int    `json:"price"`
 	Stock int    `json:"stock"`
 }
 
-var productList = map[string]product{
+var ProductList = map[string]Product{
 	"mazda": {
 		ID:    1,
 		Name:  "mazda",
@@ -28,6 +28,4 @@ var productList = map[string]product{
 	},
 }
 
-func LoadProductList() map[string]product {
-	return productList
-}
+

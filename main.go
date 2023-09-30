@@ -13,6 +13,7 @@ func main() {
 	engine := gin.Default()
 
 	engine.GET("/", handler.GetProductList)
+	engine.GET("/product/:name", handler.GetProductDetail)
 
 	port := os.Getenv("PORT")
 	if port == "" {
